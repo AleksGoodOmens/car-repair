@@ -106,6 +106,11 @@
   content: "\e910";
 }
 
+.text-darkBlue {
+  color: #02133c;
+  font-weight: 900;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -163,6 +168,7 @@ body {
   line-height: 1.16em;
   margin-bottom: 0px;
   color: #02133c;
+  text-align: start;
 }
 
 .red-text {
@@ -431,7 +437,7 @@ body {
   color: #fff;
 }
 
-.impact .wrapper1440 {
+.impact__wrapper {
   background: url(../imgs/section-impact/impact-bg.png) no-repeat;
 }
 
@@ -506,5 +512,99 @@ body {
 .impact__card-text {
   padding: 6px 0px;
   line-height: 200%;
+}
+
+.service-decor {
+  background-image: url(../imgs/section-service/decor-gears.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 7.625rem;
+}
+
+.service-margin {
+  margin-bottom: 5rem;
+}
+
+.service {
+  text-align: center;
+}
+
+.service__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5em;
+  margin-bottom: 4.125rem;
+}
+
+.service__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  background-color: #fff;
+  padding: 3.125rem 2.75rem;
+  text-align: center;
+}
+
+.service__img-box {
+  position: relative;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 2.0625rem auto;
+  text-align: start;
+}
+
+.service__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.service__title {
+  font-size: 1.1875rem;
+  font-weight: 900;
+  color: #02133c;
+  margin-bottom: 1.25rem;
+}
+
+.service__description {
+  line-height: 1.5em;
+}
+
+.promise__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6875rem;
+}
+
+.promise__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.promise__img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65px;
+          flex: 0 0 65px;
+  height: 65px;
+  position: relative;
+}
+
+.promise__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.promise__card-title {
+  margin-bottom: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */
