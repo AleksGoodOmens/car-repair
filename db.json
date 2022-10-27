@@ -1,0 +1,163 @@
+{
+  "promiseCards": [
+    {
+      "parentSelector": ".promise__cards",
+      "cardClass": "promise__card",
+      "imgBoxClass": "promise__img-box",
+      "imgClass": "promise__img",
+      "imgSrc": "./imgs/section-promise/2.png",
+      "imgAlt": "icon promise",
+      "textBoxClass": "promise__text-box",
+      "titleClass": "class='promise__card-title text-darkBlue'",
+      "title": "Quality service. Everytime.",
+      "textClass": "promise__text",
+      "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi atque ut quas maiores vero tempore similique"
+    },
+    {
+      "parentSelector": ".promise__cards",
+      "cardClass": "promise__card",
+      "imgBoxClass": "promise__img-box",
+      "imgClass": "promise__img",
+      "imgSrc": "./imgs/section-promise/1.png",
+      "imgAlt": "icon promise",
+      "textBoxClass": "promise__text-box",
+      "titleClass": "class='promise__card-title text-darkBlue'",
+      "title": "Quality service. Everytime.",
+      "textClass": "promise__text",
+      "comment": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas."
+    },
+    {
+      "parentSelector": ".promise__cards",
+      "cardClass": "promise__card",
+      "imgBoxClass": "promise__img-box",
+      "imgClass": "promise__img",
+      "imgSrc": "./imgs/section-promise/3.png",
+      "imgAlt": "icon promise",
+      "textBoxClass": "promise__text-box",
+      "titleClass": "class='promise__card-title text-darkBlue'",
+      "title": "Quality service. Everytime.",
+      "textClass": "promise__text",
+      "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi atque ut quas maiores vero tempore similique quo praesentium itaque eius dolor animi incidunt, possimus ipsam perferendis amet, facere hic quidem?"
+    }
+  ],
+  "serviceCards": [
+    {
+      "parentSelector": ".service__cards",
+      "cardClass": "service__card",
+      "imgBoxClass": "service__img-box",
+      "imgClass": "service__img",
+      "imgSrc": "'./imgs/section-service/1.png'",
+      "imgAlt": "service Icon",
+      "textBoxClass": "service__text-box",
+      "titleClass": "class='service__title'",
+      "title": "Multi Point Inspections",
+      "textClass": "service__description",
+      "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus officia eius minima temporibus, blanditiis esse fuga debitis."
+    },
+    {
+      "parentSelector": ".service__cards",
+      "cardClass": "service__card",
+      "imgBoxClass": "service__img-box",
+      "imgClass": "service__img",
+      "imgSrc": "'./imgs/section-service/2.png'",
+      "imgAlt": "service Icon",
+      "textBoxClass": "service__text-box",
+      "titleClass": "class='service__title'",
+      "title": "Auto Repair",
+      "textClass": "service__description",
+      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic sapiente quaerat deleniti in ipsa pariatur explicabo accusantium fugit! Totam?"
+    },
+    {
+      "parentSelector": ".service__cards",
+      "cardClass": "service__card",
+      "imgBoxClass": "service__img-box",
+      "imgClass": "service__img",
+      "imgSrc": "'./imgs/section-service/3.png'",
+      "imgAlt": "service Icon",
+      "textBoxClass": "service__text-box",
+      "titleClass": "class='service__title'",
+      "title": "Auto Maintenance",
+      "textClass": "service__description",
+      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam voluptates odit nostrum, aspernatur est."
+    },
+    {
+      "parentSelector": ".service__cards",
+      "cardClass": "service__card",
+      "imgBoxClass": "service__img-box",
+      "imgClass": "service__img",
+      "imgSrc": "'./imgs/section-service/4.png'",
+      "imgAlt": "service Icon",
+      "textBoxClass": "service__text-box",
+      "titleClass": "class='service__title'",
+      "title": "Tires",
+      "textClass": "service__description",
+      "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus officia eius minima temporibus, blanditiis esse fuga debitis."
+    },
+    {
+      "parentSelector": ".service__cards",
+      "cardClass": "service__card",
+      "imgBoxClass": "service__img-box",
+      "imgClass": "service__img",
+      "imgSrc": "'./imgs/section-service/5.png'",
+      "imgAlt": "service Icon",
+      "textBoxClass": "service__text-box",
+      "titleClass": "class='service__title'",
+      "title": "Service Warranty",
+      "textClass": "service__description",
+      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic sapiente quaerat deleniti in ipsa pariatur explicabo accusantium fugit! Totam?"
+    },
+    {
+      "parentSelector": ".service__cards",
+      "cardClass": "service__card",
+      "imgBoxClass": "service__img-box",
+      "imgClass": "service__img",
+      "imgSrc": "'./imgs/section-service/6.png'",
+      "imgAlt": "service Icon",
+      "textBoxClass": "service__text-box",
+      "titleClass": "class='service__title'",
+      "title": "Shop Online",
+      "textClass": "service__description",
+      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam voluptates odit nostrum, aspernatur est."
+    }
+  ],
+  "customersCards": [
+    {
+      "comment": "I used the services of this vervis and was satisfied! I can recommend these guys for solving the most difficult tasks!",
+      "img": "https://source.unsplash.com/random/200x200?sig=16",
+      "name": "Aleks Gomeniuk",
+      "parentClass": ".reviews-wrapper"
+    },
+    {
+      "comment": "Я очень сильно устала и хочу спать но моя собака ронни хочет пойти гулять эх",
+      "img": "https://source.unsplash.com/random/200x200?sig=44",
+      "name": "Юлия Никитина",
+      "parentClass": ".reviews-wrapper"
+    }
+  ],
+  "requests": [
+    {
+      "name": "Alex",
+      "email": "agsfinks@gmail.com",
+      "tel": "99923234321",
+      "select-service": "3",
+      "comment": "Hello world ",
+      "id": 1
+    },
+    {
+      "name": "123",
+      "email": "agsfinks@gmail.com",
+      "tel": "+79787133938",
+      "select-service": "5",
+      "comment": "Hello world 2",
+      "id": 2
+    },
+    {
+      "name": "Julia",
+      "email": "Julia@gmail.com",
+      "tel": "123456789",
+      "select-service": "4",
+      "comment": "Hi Julia!",
+      "id": 3
+    }
+  ]
+}

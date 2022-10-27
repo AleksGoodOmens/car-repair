@@ -10,6 +10,13 @@
     font-style: normal;
     font-display: block;
 }
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
 
 [class^="_icon-"],
 [class*=" _icon-"] {
@@ -93,13 +100,17 @@
 }
 
 $colour-text-grey: #4b4b4b;
+$colour-text-lightGrey: #959595;
 $colour-text-darkBlue: #02133c;
 $colour-text-red: #c40b0b;
+$colour-text-white: #fff;
+
 $colour-BG-green: #21c613;
 $colour-BG-grey: #f5f5f5;
 $colour-BG-white: #fff;
 $colour-BG-red-action: #e30b0b;
 $colour-BG-red: #c40b0b;
+$colour-BG-darkBlue: #02133c;
 
 .text-darkBlue {
     color: $colour-text-darkBlue;
@@ -134,8 +145,9 @@ body {
     margin: 0 auto;
 }
 .section-wrapper {
-    max-width: 1020px;
+    max-width: 1050px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section-title {
@@ -147,7 +159,7 @@ body {
     color: $colour-text-grey;
     display: flex;
     align-items: center;
-    margin: 0px;
+    margin-bottom: 2.0625em;
     // .section-title__icon
 
     &__icon {
@@ -161,11 +173,14 @@ body {
 
 .page-title {
     font-weight: 900;
-    font-size: 2.25em;
+    font-size: 1.25em;
     line-height: 1.16em;
-    margin-bottom: 0px;
+    margin-bottom: 1em;
     color: $colour-text-darkBlue;
     text-align: start;
+    @media (min-width: 720px) {
+        font-size: 2.25em;
+    }
 }
 
 .red-text {
@@ -180,16 +195,22 @@ body {
     // line-height: 1em;
 
     margin: 0;
-    margin-right: 10%;
 }
 ._translateY- {
-    transform: translateY(-25%);
+    @media (min-width: 927px) {
+        transform: translateY(-9.722%);
+        padding-bottom: 0;
+    }
+    transform: translateY(0);
+    padding-bottom: 50px;
 }
-.item-button {
-    padding: 45px 70px;
+.greenBG {
+    background-color: $colour-BG-green !important;
 }
 ._translateY {
-    transform: translateY(50%);
+    @media (min-width: 927px) {
+        transform: translateY(100%);
+    }
 }
 ._color-white {
     color: $colour-BG-white;
@@ -225,8 +246,270 @@ body {
     }
 }
 
+.status-message {
+    color: $colour-text-darkBlue;
+    position: absolute;
+    background-color: $colour-BG-green;
+}
+
+//! promise
+
+.promise {
+    // .promise__cards
+    @media (min-width: 880px) {
+        padding-bottom: 6.35%;
+    }
+    padding-bottom: 50px;
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6875rem;
+    }
+
+    // .promise__card
+
+    &__card {
+        flex: 1 0 30%;
+        min-width: 280px;
+        display: flex;
+        gap: 1.25rem;
+    }
+
+    // .promise__img-box
+
+    &__img-box {
+        flex: 0 0 65px;
+        height: 65px;
+        position: relative;
+    }
+
+    // .promise__img
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    // .promise__text-box
+
+    &__text-box {
+    }
+
+    // .promise__card-title
+
+    &__card-title {
+        margin-bottom: 1.25rem;
+    }
+
+    // .promise__text
+
+    &__text {
+    }
+}
+
 // ///////////////////////////////////////////////////////////////////////////////
-//! reviews 
+//! services
+.service {
+    // .service__cards
+
+    text-align: center;
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        margin-bottom: 4.125rem;
+    }
+
+    // .service__card
+
+    &__card {
+        flex: 1 0 30%;
+        background-color: $colour-BG-white;
+        padding: 2em;
+        text-align: center;
+        min-width: 280px;
+        @media (min-width: 927px) {
+            padding: 2.6% 2.3%;
+        }
+    }
+
+    // .service__img-box
+
+    &__img-box {
+        position: relative;
+        height: 65px;
+        width: 65px;
+        margin: 0 auto 2.0625rem auto;
+        text-align: start;
+    }
+
+    // .service__img
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    // .service__title
+
+    &__title {
+        font-size: 1.1875rem;
+        font-weight: 900;
+        color: $colour-text-darkBlue;
+        margin-bottom: 1.25rem;
+    }
+
+    // .service__description
+
+    &__description {
+        line-height: 1.5em;
+    }
+}
+.service-decor {
+    background-image: url(../imgs/section-service/decor-gears.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 7.625rem;
+}
+.service-margin {
+    margin-bottom: 5rem;
+}
+
+//! /////////////////////////////////////////
+//? Appointment
+
+.appointment {
+    // .appointment__decor
+    background-color: $colour-BG-darkBlue;
+    padding-bottom: 4.45%;
+
+    &__decor {
+        background: url(../imgs/section-appointment/1.png) no-repeat top right,
+            url(../imgs/section-appointment/2.png) no-repeat bottom left;
+        padding: 6.77% 0 6.484375% 0;
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        margin: 0 auto;
+        color: $colour-text-white;
+        > * {
+            flex: 1;
+        }
+    }
+
+    // .appointment__form
+
+    &__form {
+        flex: 0 1 585px;
+        background-color: $colour-BG-white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.75em;
+        padding: 2.35em 1.5em;
+        @media (min-width: 927px) {
+            padding: 4.75em 3em;
+        }
+
+        .page-title {
+            text-align: center;
+        }
+    }
+
+    // .appointment__inputs
+
+    &__inputs {
+        flex-wrap: wrap;
+        gap: 1.375em;
+
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 927px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    // .appointment__input
+
+    &__input {
+        @media (min-width: 927px) {
+            flex: 1 0 45%;
+        }
+
+        input,
+        select,
+        textarea {
+            background-color: $colour-BG-grey;
+            color: $colour-text-lightGrey;
+            width: 100%;
+            height: 100%;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: "";
+            resize: none;
+            box-shadow: inset 0px 0px 0px 0px red;
+            border-style: solid;
+            border: none;
+            border-width: 0px;
+            border: 0px solid #cccccc;
+            padding: 1em;
+            &::placeholder {
+                color: $colour-text-lightGrey;
+            }
+        }
+        select option {
+            color: $colour-text-lightGrey;
+        }
+    }
+
+    // .appointment__button
+
+    &__button {
+        flex-basis: 48px;
+        align-self: flex-end;
+    }
+
+    // .appointment__information
+
+    &__information {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.75em;
+        min-width: 280px;
+    }
+
+    // .appointment__information-title
+
+    &__information-title {
+        font-size: 1.875em;
+        font-weight: 900;
+    }
+
+    // .appointment__information-value
+
+    &__information-value {
+        font-size: 6em;
+        font-weight: 900;
+    }
+
+    // .appointment__information-text
+
+    &__information-text {
+        font-size: 1.1875em;
+    }
+}
+
+// ///////////////////////////////////////////////////////////////////////////////
+//! gallery
 
 .gallery {
     // .gallery__content
@@ -234,7 +517,7 @@ body {
     background-position-x: 0;
     background-position-y: 100%;
     background-repeat: no-repeat;
-    padding-bottom: 13.9%;
+    padding-bottom: 14%;
     overflow: visible;
     &__container {
         background-color: $colour-BG-white;
@@ -298,6 +581,7 @@ body {
         padding-bottom: 56.74%;
         position: relative;
         overflow: hidden;
+        margin: 0 -15px;
     }
 
     // .gallery__item
@@ -367,7 +651,7 @@ body {
     }
 }
 .reviews {
-    padding-bottom: 20%;
+    padding-bottom: 12%;
     // .reviews__item
 
     // .reviews__card
@@ -408,15 +692,23 @@ body {
 
 .impact {
     // .impact__item
-    background-color: $colour-text-darkBlue;
-    color: $colour-BG-white;
+    background-color: $colour-BG-darkBlue;
+    color: $colour-text-white;
 
+    @media (min-width: 927px) {
+        padding-top: 0px;
+    }
+    padding-top: 50px;
     &__wrapper {
         background: url(../imgs/section-impact/impact-bg.png) no-repeat;
     }
 
     &__item {
         display: flex;
+        flex-wrap: wrap;
+        @media (min-width: 927px) {
+            flex-wrap: nowrap;
+        }
         // margin-bottom: 75px;
     }
 
@@ -425,14 +717,24 @@ body {
     &__title-box {
         margin-right: 10%;
         align-self: flex-end;
+        margin-bottom: 2em;
+        @media (min-width: 927px) {
+            margin-bottom: 0em;
+        }
     }
 
     // .impact__img-box
 
     &__img-box {
-        flex: 0 0 498px;
+        flex: 1 0 50%;
         position: relative;
-        padding-bottom: 30.88%;
+        padding-bottom: 56.25%;
+        margin: 0 -15px;
+        @media (min-width: 927px) {
+            flex: 0 0 498px;
+            padding-bottom: 30.88%;
+            margin: 0;
+        }
     }
 
     // .impact__img
@@ -447,25 +749,36 @@ body {
 
     &__item-cards {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        > * {
+            flex: 0 1 40%;
+            min-width: 245px;
+        }
+        @media (min-width: 1020px) {
+            flex-wrap: nowrap;
+            > * {
+                flex: 1 0 245px;
+                align-items: flex-start;
+            }
+        }
     }
 
     // .impact__card
 
     &__card {
-        flex: 1;
-
-        &:not(:last-child) {
-            margin-right: 24px;
-        }
         display: flex;
-        align-items: center;
+        gap: 1em;
     }
 
     // .impact__card-img-box
 
     &__card-img-box {
         position: relative;
-        flex: 1 0 76px;
+        flex: 0 0 76px;
+        padding-bottom: 76px;
         align-self: stretch;
     }
 
@@ -485,123 +798,27 @@ body {
         padding: 6px 0px;
         line-height: 200%;
     }
-}
-
-// ///////////////////////////////////////////////////////////////////////////////
-//! services
-
-.service-decor {
-    background-image: url(../imgs/section-service/decor-gears.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    padding-bottom: 7.625rem;
-}
-.service-margin {
-    margin-bottom: 5rem;
-}
-.service {
-    // .service__cards
-
-    text-align: center;
-
-    &__cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5em;
-        margin-bottom: 4.125rem;
-    }
-
-    // .service__card
-
-    &__card {
-        flex: 1 0 30%;
-        background-color: $colour-BG-white;
-        padding: 3.125rem 2.75rem;
+    .item-button {
+        padding: 2.35% 3.645%;
+        margin-top: 3em;
         text-align: center;
-    }
-
-    // .service__img-box
-
-    &__img-box {
-        position: relative;
-        height: 65px;
-        width: 65px;
-        margin: 0 auto 2.0625rem auto;
-        text-align: start;
-    }
-
-    // .service__img
-
-    &__img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    // .service__title
-
-    &__title {
-        font-size: 1.1875rem;
-        font-weight: 900;
-        color: $colour-text-darkBlue;
-        margin-bottom: 1.25rem;
-    }
-
-    // .service__description
-
-    &__description {
-        line-height: 1.5em;
+        .item-h3 {
+            margin-bottom: 1em;
+            margin: 2em auto;
+            font-size: 1em;
+        }
+        .button {
+            margin: 0 auto;
+        }
+        @media (min-width: 927px) {
+            text-align: start;
+            margin-top: 0em;
+            .item-h3 {
+                margin: 0 10% 0 10%;
+                font-size: 1.5em;
+            }
+        }
     }
 }
 
 ///////////////////////////////////////////////////////////////////
-//! promise
-
-.promise {
-    // .promise__cards
-
-    &__cards {
-        display: flex;
-        gap: 1.6875rem;
-    }
-
-    // .promise__card
-
-    &__card {
-        flex: 1 0 30%;
-        display: flex;
-        gap: 1.25rem;
-    }
-
-    // .promise__img-box
-
-    &__img-box {
-        flex: 0 0 65px;
-        height: 65px;
-        position: relative;
-    }
-
-    // .promise__img
-
-    &__img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    // .promise__text-box
-
-    &__text-box {
-    }
-
-    // .promise__card-title
-
-    &__card-title {
-        margin-bottom: 1.25rem;
-    }
-
-    // .promise__text
-
-    &__text {
-    }
-}
