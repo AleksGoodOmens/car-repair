@@ -11,8 +11,76 @@
 
 <body>
 
-    <!--  <header></header> -->
-    <main>
+    <header class="header section-wrapper">
+        <div class="header__wrapper">
+            <div class="header__item header-top">
+                <div class="header-top__logo"><img class="-ibg" src="imgs/home-page/logo.svg" alt="logo"></div>
+                <div class="header-top__cards">
+                    <div class="header-top__card">
+                        <i class="header-top__card-icon _icon-timer"></i>
+                        <div class="header-top__card-description">
+                            <div class="header-top__card-title">service hours</div>
+                            <div class="header-top__card-time">Mon - Sat: 7:00 am - 6:00 pm</div>
+                        </div>
+                    </div>
+                    <a href="tel:+5551234567" class="header-top__card">
+                        <i class="header-top__card-icon _icon-phone"></i>
+                        <div class="header-top__card-description">
+                            <div class="header-top__card-title">call us</div>
+                            <div class="header-top__card-tel">(555) 1234567</div>
+                        </div>
+                    </a>
+                </div>
+                <button class="header__button button"><span>make an appointment </span><span class="button__icon-box"><i class="_icon-arrow_forward"></i></span></button>
+            </div>
+            <nav class="header__item header-bottom active-burger">
+                <i class="_icon-cog burger"></i>
+                <ul class="header-bottom__ul">
+                    <li class="header-bottom__li">services<i class="_icon-expand_arrow"></i>
+                        <ul class="header-bottom__li-expand">
+                            <li class="header-bottom__li-expand-item"><a href="#">link 1</a></li>
+                            <li class="header-bottom__li-expand-item"><a href="#">link 2</a></li>
+                            <li class="header-bottom__li-expand-item"><a href="#">link 13</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-bottom__li">specials</li>
+                    <li class="header-bottom__li">estimates</li>
+                    <li class="header-bottom__li">reviews</li>
+                    <li class="header-bottom__li">shop<i class="_icon-expand_arrow"></i>
+                        <ul class="header-bottom__li-expand">
+                            <li class="header-bottom__li-expand-item"><a href="#">link 1</a></li>
+                            <li class="header-bottom__li-expand-item"><a href="#">link 2</a></li>
+                            <li class="header-bottom__li-expand-item"><a href="#">link 13</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-bottom__li">services</li>
+                </ul>
+                <div class="header-bottom__input">
+                    <div class="header-bottom__input-item"><input type="search" name="search" id="search"></div><i class="_icon-search"></i><i class="_icon-shopping_cart"><span class="shoping-card-value">2</span></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="home">
+            <img class='-ibg disabled' src="imgs/home-page/1.jpg" alt="service mann">
+            <img class='-ibg disabled' src="imgs/home-page/2.jpg" alt="service mann">
+            <img class='-ibg' src="imgs/home-page/3.jpg" alt="service mann">
+            <div class="home__wrapper section-wrapper">
+                <h1 class="home__title">Top notch service is our main auto motive</h1>
+                <button class="header__button button"><span>make an appointment </span><span class="button__icon-box"><i class="_icon-arrow_forward"></i></span></button>
+            </div>
+        </section>
+        <section class="about section-wrapper _translateY-">
+            <div class="about__wrapper ">
+                <h2 class="section-title"><i class="section-title__icon _icon-OverlineMark">
+                        <span class="path1"></span><span class="path2"></span></span>
+                    </i><span class="section-title__name">who we are</span></h2>
+                <h3 class="page-title">Nemo enim ipsam voluptatem quia voluptas in proident</h3>
+                <div class="about__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</div>
+                <div class="about__img"><img class="-ibg" src="imgs/section-about/1.jpg" alt="picture"></div>
+            </div>
+        </section>
         <section class="promise section-wrapper">
             <h2 class="section-title"><i class="section-title__icon _icon-OverlineMark">
                     <span class="path1"></span><span class="path2"></span></span>
@@ -22,7 +90,17 @@
             <div class="promise__cards">
             </div>
         </section>
-
+        <section class="section-video">
+            <video class="section-video__video" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" poster="imgs/section-video/video.jpg" muted></video>
+            <div class="section-wrapper ">
+                <div class="section-video__content">
+                    <h3 class="section-video__title">
+                        Nemo enim ipsam voluptatem quia voluptas in proident
+                    </h3>
+                    <button class="section-video__button button"><i class=" _icon-play_arrow section-video__icon-btn"></i></button>
+                </div>
+            </div>
+        </section>
         <section class="service service-decor wrapper1440">
             <div class="section-wrapper">
                 <h2 class="section-title"><i class="section-title__icon _icon-OverlineMark">
@@ -33,7 +111,6 @@
                 <button class="button"><span>learn more</span><span class="button__icon-box"><i class="_icon-arrow_forward"></i></span></button>
             </div>
         </section>
-
         <section class="appointment">
 
             <div class="wrapper1440 appointment__decor">
@@ -85,24 +162,21 @@
                     <div class="gallery__content">
                         <nav class="gallery__navigation">
                             <ul class="gallery__navigation-tabs">
-                                <li class="gallery__navigation-tab">Gallery</li>
-                                <li class="gallery__navigation-tab active">Live stream: Bay 1</li>
-                                <li class="gallery__navigation-tab">Live stream: Bay 2</li>
-                                <li class="gallery__navigation-tab">Live stream: Bay 3</li>
+                                <li class="gallery__navigation-tab active">Gallery</li>
                             </ul>
                         </nav>
                         <div class="gallery__body">
-                            <div class="gallery__slide gallery-pictures disabled active">
-                                <div class="gallery-pictures__item"><img src="https://source.unsplash.com/random/200x200?sig=1" alt="stream 1"></div>
-                                <div class="gallery-pictures__item"><img src="https://source.unsplash.com/random/200x200?sig=2" alt="stream 2"></div>
-                                <div class="gallery-pictures__item"><img src="https://source.unsplash.com/random/200x200?sig=3" alt="stream 1"></div>
-                                <div class="gallery-pictures__item content"><img src="https://source.unsplash.com/random/200x200?sig=4" alt="stream 2"></div>
+                            <div class="gallery__slide active">
+                                <div class="gallery__slide-content gallery-pictures ">
+                                    <div class="gallery-pictures__item"><img src="https://source.unsplash.com/random/200x200?sig=1" alt="stream 1"></div>
+                                    <div class="gallery-pictures__item"><img src="https://source.unsplash.com/random/200x200?sig=2" alt="stream 2"></div>
+                                    <div class="gallery-pictures__item"><img src="https://source.unsplash.com/random/200x200?sig=3" alt="stream 1"></div>
+                                    <div class="gallery-pictures__item content"><img src="https://source.unsplash.com/random/200x200?sig=4" alt="stream 2"></div>
+                                </div>
                             </div>
-                            <!-- <iframe class="gallery__slide disabled active" width="1730" height="676" src="https://www.youtube.com/embed/ZgLJdKn31BE" title="Full restoration ancient UAZ 469 | Restoring and repair antique uaz 469 cars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><img class="gallery__slide disabled" src="imgs/section-gallery/2.jpg" alt="stream 2"><img class="gallery__slide disabled" src="imgs/section-gallery/1.jpg" alt="stream 3"><img class="gallery__slide disabled" src="imgs/section-gallery/2.jpg" alt="stream 4"> -->
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <section class="reviews wrapper1440 _translateY-">
@@ -165,13 +239,48 @@
             </div>
 
         </section>
+        <section class="contacts section-wrapper">
+            <div class="contacts__item">
+                <div class="contacts__logo"> <img class="-ibg" src="imgs/home-page/logo.svg" alt="logo"> </div>
+                <div class="contacts__sublogo">This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. </div>
+                <div class="contacts__social-links">
+                    <a href="#"><i class="_icon-facebook"></i></a>
+                    <a href="#"><i class="_icon-twitter"></i></a>
+                    <a href="#"><i class="_icon-instagram"></i></a>
+                    <a href="#"><i class="_icon-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contacts__item">
+                <h4 class="contacts__title">EXPLORE LINKS</h4>
+                <ul class="contacts__links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">estimates</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="contacts__item">
+                <h4 class="contacts__title">CONTACT</h4>
+                <ul class="contacts__contacts">
+                    <li><i class="_icon-place"></i>321 Pikes Place Parkway
+                        Seattle, WA 54321</li>
+                    <li><i class="_icon-smartphone"></i><a href="tel: 5557654321">(555) 765-4321</a></li>
+                    <li><i class="_icon-email"></i><a href="mailto:Info@company.com">Info@company.com</a></li>
+                    <li><i class="_icon-timer"></i>Mon - Sat: 7:000 am - 6:00 pm</li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <footer class="footer ">
+        <div class="section-wrapper footer__wrapper">
+            <div class="footer__text">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</div>
+            <div class="footer__copyrights">© 2022 Company.</div>
+            <div class="footer__links"><a href="#">Privacy Policy</a>|<a href="#">Terms & Conditions</a></div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
